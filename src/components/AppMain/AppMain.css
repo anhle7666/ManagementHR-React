@@ -1,0 +1,16 @@
+.MainView {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    width: 100%;
+    background-color: #ececec;
+}
+
+.container {
+    width: 100%;
+    min-width: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}

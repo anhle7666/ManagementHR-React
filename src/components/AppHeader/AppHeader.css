@@ -1,0 +1,26 @@
+.appHeader {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background-color: #f0f8ff;
+    color: #121212;
+    padding: 0 40px;
+}
+
+.appHeader a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #121212;
+    font-weight: 500;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    width: 600px;
+    justify-content: space-around;
+}
+
+.menu-items a:hover {
+    color: #5da2d5;
+}

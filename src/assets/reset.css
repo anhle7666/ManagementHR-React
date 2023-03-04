@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+:root {
+    --theme: #00bcd4;
+}
+
+body {
+    color: rgb(18, 18, 18);
+}
+

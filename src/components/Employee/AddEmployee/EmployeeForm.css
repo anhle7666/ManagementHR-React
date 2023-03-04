@@ -1,0 +1,90 @@
+.popup__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f8ff;
+    z-index: 32;
+    height: 80%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #aaa;
+    overflow-y: scroll;
+
+}
+
+.popup__container .title {
+    width: 100%;
+    text-align: center;
+}
+
+
+.form__container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas:
+        "personal-info personal-info job-info job-info"
+        "personal-info personal-info job-info job-info"
+        "personal-info personal-info education-info education-info"
+        "personal-info personal-info education-info education-info";
+    position: relative;
+    height: 100%;
+}
+
+.form__container label {
+    display: inline-block;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.form__container input {
+    outline: none;
+}
+
+.form__container select {
+    cursor: pointer;
+}
+
+.form__container input,
+.form__container select {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 250px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.form__container .personal__info,
+.form__container .job__info,
+.form__container .education__info,
+.form__container .training__info {
+    background-color: #f0f8ff;
+    /* min-height: 150px; */
+}
+
+.form__section {
+    border-bottom: 1px solid #ccc;
+}
+
+.form__functions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__functions button {
+    width: 120px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 5px 0;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.subLabel {
+    padding-left: 10%;
+}

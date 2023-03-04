@@ -1,0 +1,66 @@
+.function {
+    width: 99%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.function-title {
+    margin: 0 20px;
+    color: #5da2d5;
+}
+
+.function-view_details {
+    display: flex;
+    width: 99%;
+    margin: 10px;
+}
+
+.name-list {
+    height: 825px;
+    min-width: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.list__employees {
+    height: 690px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.employee-info {
+    height: 825px;
+    width: 1960px;
+    margin: 0 0 0 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.name-list h3,
+.employee-info h3 {
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+.item__employees {
+    position: relative;
+    cursor: pointer;
+    height: 30px;
+    /* list-style: none; */
+}
+
+.item__employees:hover {
+    color: #5da2d5;
+}
+
+.item__employees:active {
+    text-shadow: 1px 1px 1px #ccc;
+}

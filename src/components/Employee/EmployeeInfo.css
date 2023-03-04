@@ -1,0 +1,79 @@
+.employee-profile-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas:
+        "personal-info personal-info job-info job-info"
+        "personal-info personal-info education-info education-info"
+        "personal-info personal-info training-info training-info";
+    height: 100%;
+}
+
+.personal__info {
+    grid-area: personal-info;
+}
+
+.job__info {
+    grid-area: job-info;
+}
+
+.education__info {
+    grid-area: education-info;
+}
+
+.training__info {
+    grid-area: training-info;
+}
+
+.personal__info,
+.education__info,
+.job__info,
+.training__info {
+    position: relative;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    /* min-height: 200px; */
+}
+
+.personal__info>label,
+.education__info>label,
+.job__info>label,
+.training__info>label {
+    position: absolute;
+    top: -15px;
+    width: fit-content;
+    text-align: center;
+    background-color: inherit;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+
+/* for the table in Training*/
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+
+}
+
+th,
+td {
+
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #5da2d5;
+}
+
+tr:hover {
+    background-color: #f0f8ff;
+}

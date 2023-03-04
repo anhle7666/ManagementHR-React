@@ -1,0 +1,47 @@
+.function .btn {
+    position: relative;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+
+.btn::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: inherit;
+    height: inherit;
+    /* display: none; */
+    left: 1px;
+    top: 1px;
+    transition: top left 0.5s ease;
+
+}
+
+/* .btn-red::after {
+    background-color: #f78888;
+} */
+
+.function .btn:hover {
+    background-color: #f3d250;
+}
+
+.function .btn-red:hover {
+    background-color: #f78888;
+}
+
+.btn:hover.btn::after {
+    /* background-color: #f3d250; */
+    display: inline;
+    top: 0;
+    left: 0;
+}
